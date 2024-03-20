@@ -150,7 +150,27 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  .navbar-list {
+    display: none;
+  }
+  .nav-toggle-btn {
+    display: block;
+  }
+}
 
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  /* Adjust styles for larger screens */
+  .navbar-list {
+    display: flex;
+  }
+  .nav-toggle-btn {
+    display: none;
+  }
+}
 
 
 
